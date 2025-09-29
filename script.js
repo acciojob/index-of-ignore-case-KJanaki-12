@@ -1,5 +1,12 @@
 function indexOfIgnoreCase(s1, s2) {
   // write your code here
+	s1=s1.toLowerCase();
+	s2=s2.toLowerCase();
+	if(s1.includes(s2)){
+		return s1.length-s2.length;
+	}else{
+		return -1;
+	}
 }
 
 // Please do not change the code below
